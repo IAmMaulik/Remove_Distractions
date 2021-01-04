@@ -4,7 +4,7 @@ from datetime import datetime as dt
 
 # Checking Wheteher the computer is Windows Mac Or Linux
 if 'windows' in platform.system().lower():
-    hosts_path = "C:\\Windows\\System32\\drivers\\etc"
+    hosts_path = "C:\\Windows\\System32\\drivers\\etc\\hosts"
 else:
     hosts_path = "/etc/hosts"
 
@@ -36,7 +36,22 @@ while True:
 # Main Loop of the program
 while True:
     if (dt(dt.now().year, dt.now().month, dt.now().day, start_time) < dt.now()) and (dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, end_time)):
-        print("Working Hours...")
+        with open(hosts_path, 'r+') as file:
+            content = file.read()
+            for website in website_list:
+                if website in content:
+                    pass
+                else:
+                    file.write(f"{redirect_ip} {website}\n")
     else:
-        print("Fun Hours...")
+        with open(hosts_path, 'r+') as file:
+            content = file.readlines()
+            file.seek(0)
+            for line in content:
+                if not any(website in line for website in website_list):
+                    file.write(line)
+            file.truncate()
     time.sleep(6)
+
+
+# Editing the host file
