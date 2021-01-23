@@ -17,7 +17,7 @@ This python script blocks the websites you enter into it during the hours specif
 
 ## Screenshots
 
-![Example screenshot of Facebook.com](./img/screenshot.png)
+![Example screenshot of Facebook.com](./img/screenshot.PNG)
 
 ## Setup
 
@@ -35,6 +35,8 @@ python main.py
 * The program will guide you on what to do next
 
 * After you are finidhed entering the stuuf, try to open the websites that you had typed in and see the magic happen
+
+* After the time you had entered is over, the site can be accessed again
 
 ## TODO list
 
