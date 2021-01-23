@@ -8,7 +8,7 @@ Have you ever been distracted while working in your latest project and found you
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [To-Do List](#todo-list)
-- [How It Works](#how-it-works)
+* [How It Works](#how-it-works)
 * [Status](#status)
 * [Contact](#contact)
 
@@ -55,4 +55,4 @@ Project is:      _finished_
 
 ## Contact
 
-Created by [@Maulik Shah](https://www.iammaulik.gtihub.io/site/) - feel free to contact me!
+Created by [@Maulik Shah](https://www.iammaulik.gtihub.io/) - feel free to contact me!
